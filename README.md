@@ -1,16 +1,7 @@
-# animated_logo_flutter
+# Animated Logo Flutter
 
-A new Flutter project.
+A new Flutter project with use of [AnimatedPositioned](https://api.flutter.dev/flutter/widgets/AnimatedPositioned-class.html).
 
-## Getting Started
+## Animated 7Span Logo
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/109585734/209823491-f7edc67b-0bf0-4a77-98a0-9f2ddb33da1f.gif)
