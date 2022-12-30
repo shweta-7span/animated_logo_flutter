@@ -130,11 +130,24 @@ class TriangleDots extends StatelessWidget {
           : Random()
               .nextInt(MediaQuery.of(context).size.width.toInt())
               .toDouble(),
-      child: Container(
-        decoration:
-            BoxDecoration(color: color, shape: BoxShape.circle),
+      child: SizedBox.fromSize(
+        // size: Size.fromRadius(dotSize-7.5),
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            color: color,
+            shape: BoxShape.circle,
+            boxShadow: [
+              BoxShadow(
+                color: color!.withOpacity(0.1),
+                offset:const Offset(1,1),
+                blurRadius: dotSize,
+                spreadRadius: dotSize,
+              ),
+            ],
+          ),
+        ),
       ),
-         /* CustomPaint(
+      /* CustomPaint(
         painter: TrianglePainter(
           strokeColor: color ?? Colors.red,
           paintingStyle: PaintingStyle.fill,
