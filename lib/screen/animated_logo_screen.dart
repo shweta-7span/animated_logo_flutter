@@ -56,7 +56,7 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
               shapeSize: shapeSize,
               isChanged: isChanged,
               isOpposite: false,
-              verticalSpace: 0-1.6,
+              verticalSpace: 0-2,
               horizontalSpace:
                   (shapeSize / 10) * (0.45 /*+ 0.2*/) + spaceBetweenTriangle ,
               color: const Color(0xFFC30705),
@@ -81,7 +81,7 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
               shapeSize: shapeSize,
               isChanged: isChanged,
               isOpposite: false,
-              verticalSpace: 0-1.6,
+              verticalSpace: 0-2,
               horizontalSpace:
                   (shapeSize / 10) * (4.38 /*+ 0.6*/) + (spaceBetweenTriangle * 3),
               color: const Color(0xFFE31A1A),
@@ -95,7 +95,7 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
               isChanged: isChanged,
               isOpposite: true,
               verticalSpace:
-                  (shapeSize / 10) * (4.01 /*+ 0.3*/) + spaceBetweenTriangle,
+                  (shapeSize / 10) * (4.1 /*+ 0.3*/) + spaceBetweenTriangle,
               horizontalSpace:
                   (shapeSize / 10) * (1.68/* + 0.05*/) + (spaceBetweenTriangle * 2),
               color: const Color(0xFFE01B1A),
@@ -109,9 +109,9 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
               isChanged: isChanged,
               isOpposite: false,
               verticalSpace:
-                  (shapeSize / 10) * (4.01 /*+ 0.3*/) + spaceBetweenTriangle,
+                  (shapeSize / 10) * (4.04 /*+ 0.3*/) + spaceBetweenTriangle,
               horizontalSpace:
-                  (shapeSize / 10) * (2.21 /*+ 0.35*/) + (spaceBetweenTriangle * 3),
+                  (shapeSize / 10) * (2.19 /*+ 0.35*/) + (spaceBetweenTriangle * 3),
               color: const Color(0xFFC30606),
               // color: const Color(0xFFC30705),
             ),
@@ -123,9 +123,9 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
               isChanged: isChanged,
               isOpposite: false,
               verticalSpace:
-                  (shapeSize / 10) * (8.02 /*+ 0.6*/) + (spaceBetweenTriangle * 2),
+                  (shapeSize / 10) * (8.16 /*+ 0.6*/) + (spaceBetweenTriangle * 2),
               horizontalSpace:
-                  (shapeSize / 10) * (0.06 /*+ 0.05*/) + (spaceBetweenTriangle * 3),
+                  (shapeSize / 10) * (-0.01 /*+ 0.05*/) + (spaceBetweenTriangle * 3),
               color: const Color(0xFFFE3F3C),
               // color: const Color(0xFFC30705),
             ),
