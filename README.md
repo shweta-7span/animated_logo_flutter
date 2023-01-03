@@ -4,4 +4,4 @@ A new Flutter project with use of [AnimatedPositioned](https://api.flutter.dev/f
 
 ## Animated 7Span Logo
 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/109585734/210326615-7f50991e-60d1-4ba4-85a1-c2a9cd28f386.gif)
+![7Span logo with triangles](https://user-images.githubusercontent.com/109585734/210338254-d31df5f3-d3bd-4cdc-8bed-5bd231f299a2.gif)

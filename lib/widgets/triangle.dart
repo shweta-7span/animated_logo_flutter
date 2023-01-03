@@ -1,6 +1,7 @@
 import 'dart:math';
-import 'package:animated_logo_flutter/shapes/dot.dart';
 import 'package:flutter/material.dart';
+
+import '../shapes/triangle_shape_builder.dart';
 
 class Triangle extends StatelessWidget {
   const Triangle({
@@ -117,34 +118,56 @@ class Triangle extends StatelessWidget {
     }
 
     return AnimatedPositioned(
-        curve: Curves.easeInOutSine,
-        duration: const Duration(milliseconds: 3000),
-        height: dotSize,
-        width: dotSize,
-        top: isChanged
-            ? y + (MediaQuery.of(context).size.height / 3) + verticalSpace
-            : Random()
-                .nextInt(MediaQuery.of(context).size.height.toInt())
-                .toDouble(),
-        left: isChanged
-            ? x + (MediaQuery.of(context).size.width / 3.3) + horizontalSpace
-            : Random()
-                .nextInt(MediaQuery.of(context).size.width.toInt())
-                .toDouble(),
-        child: Dot(
-          dotSize: dotSize,
-          color: color,
-        )
-        /* CustomPaint(
+      curve: Curves.easeInOutSine,
+      duration: const Duration(milliseconds: 3000),
+      height: dotSize,
+      width: dotSize,
+      top: isChanged
+          ? y + (MediaQuery.of(context).size.height / 3.3) + verticalSpace
+          : Random()
+              .nextInt(MediaQuery.of(context).size.height.toInt())
+              .toDouble(),
+      left: isChanged
+          ? x + (MediaQuery.of(context).size.width / 3.3) + horizontalSpace
+          : Random()
+              .nextInt(MediaQuery.of(context).size.width.toInt())
+              .toDouble(),
+      /*--------------Dots-----------------*/
+      /*child: Dot(
+        dotSize: dotSize,
+        color: color,
+      ),*/
+      /*--------------Triangle Without Shadow-----------------*/
+      /*child: CustomPaint(
         painter: TrianglePainter(
           strokeColor: color ?? Colors.red,
           paintingStyle: PaintingStyle.fill,
+          isOpposite: isOpposite,
         ),
         child: SizedBox(
-          height: dotSize,
           width: dotSize,
+          height: dotSize,
         ),
       ),*/
-        );
+      /*--------------Triangle With Shadow-----------------*/
+      child: Container(
+        height: dotSize,
+        width: dotSize,
+        decoration: ShapeDecoration(
+          color: color,
+          shape: ShapeBuilder(
+            isOpposite: isOpposite,
+          ),
+          shadows: [
+            BoxShadow(
+              color: color!.withOpacity(0.1),
+              offset: const Offset(1, 1),
+              blurRadius: dotSize,
+              spreadRadius: dotSize,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
