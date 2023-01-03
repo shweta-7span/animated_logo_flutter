@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:animated_logo_flutter/shape/triangle_dots.dart';
+import 'package:animated_logo_flutter/widgets/triangle.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedLogoScreen extends StatefulWidget {
@@ -40,7 +40,7 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
         children: [
           for (double i = 1; i <= 10; i++)
             //1
-            TriangleDots(
+            Triangle(
               count: i,
               shapeSize: shapeSize,
               isChanged: isChanged,
@@ -51,7 +51,7 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
             ),
           for (double i = 1; i <= 10; i++)
             //2
-            TriangleDots(
+            Triangle(
               count: i,
               shapeSize: shapeSize,
               isChanged: isChanged,
@@ -63,7 +63,7 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
             ),
           for (double i = 1; i <= 10; i++)
             //3
-            TriangleDots(
+            Triangle(
               count: i,
               shapeSize: shapeSize,
               isChanged: isChanged,
@@ -76,7 +76,7 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
             ),
           for (double i = 1; i <= 10; i++)
             //4
-            TriangleDots(
+            Triangle(
               count: i,
               shapeSize: shapeSize,
               isChanged: isChanged,
@@ -89,7 +89,7 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
             ),
           for (double i = 1; i <= 10; i++)
             //5
-            TriangleDots(
+            Triangle(
               count: i,
               shapeSize: shapeSize,
               isChanged: isChanged,
@@ -103,7 +103,7 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
             ),
           for (double i = 1; i <= 10; i++)
             //6
-            TriangleDots(
+            Triangle(
               count: i,
               shapeSize: shapeSize,
               isChanged: isChanged,
@@ -117,7 +117,7 @@ class _AnimatedLogoScreenState extends State<AnimatedLogoScreen> {
             ),
           for (double i = 1; i <= 10; i++)
             //7
-            TriangleDots(
+            Triangle(
               count: i,
               shapeSize: shapeSize,
               isChanged: isChanged,

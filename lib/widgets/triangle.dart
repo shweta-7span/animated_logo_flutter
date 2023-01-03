@@ -1,8 +1,9 @@
 import 'dart:math';
+import 'package:animated_logo_flutter/shapes/dot.dart';
 import 'package:flutter/material.dart';
 
-class TriangleDots extends StatelessWidget {
-  const TriangleDots({
+class Triangle extends StatelessWidget {
+  const Triangle({
     Key? key,
     required this.count,
     required this.shapeSize,
@@ -116,38 +117,25 @@ class TriangleDots extends StatelessWidget {
     }
 
     return AnimatedPositioned(
-      curve: Curves.easeInOutSine,
-      duration: const Duration(milliseconds: 3000),
-      height: dotSize,
-      width: dotSize,
-      top: isChanged
-          ? y + (MediaQuery.of(context).size.height / 3) + verticalSpace
-          : Random()
-              .nextInt(MediaQuery.of(context).size.height.toInt())
-              .toDouble(),
-      left: isChanged
-          ? x + (MediaQuery.of(context).size.width / 3.3) + horizontalSpace
-          : Random()
-              .nextInt(MediaQuery.of(context).size.width.toInt())
-              .toDouble(),
-      child: SizedBox.fromSize(
-        // size: Size.fromRadius(dotSize-7.5),
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            color: color,
-            shape: BoxShape.circle,
-            boxShadow: [
-              BoxShadow(
-                color: color!.withOpacity(0.1),
-                offset:const Offset(1,1),
-                blurRadius: dotSize,
-                spreadRadius: dotSize,
-              ),
-            ],
-          ),
-        ),
-      ),
-      /* CustomPaint(
+        curve: Curves.easeInOutSine,
+        duration: const Duration(milliseconds: 3000),
+        height: dotSize,
+        width: dotSize,
+        top: isChanged
+            ? y + (MediaQuery.of(context).size.height / 3) + verticalSpace
+            : Random()
+                .nextInt(MediaQuery.of(context).size.height.toInt())
+                .toDouble(),
+        left: isChanged
+            ? x + (MediaQuery.of(context).size.width / 3.3) + horizontalSpace
+            : Random()
+                .nextInt(MediaQuery.of(context).size.width.toInt())
+                .toDouble(),
+        child: Dot(
+          dotSize: dotSize,
+          color: color,
+        )
+        /* CustomPaint(
         painter: TrianglePainter(
           strokeColor: color ?? Colors.red,
           paintingStyle: PaintingStyle.fill,
@@ -157,6 +145,6 @@ class TriangleDots extends StatelessWidget {
           width: dotSize,
         ),
       ),*/
-    );
+        );
   }
 }
